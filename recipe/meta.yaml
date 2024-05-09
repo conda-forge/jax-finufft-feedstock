@@ -17,6 +17,8 @@ build:
     # Turn off "-march=native"
     - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="
     - SKBUILD_CMAKE_ARGS="-DJAX_FINUFFT_USE_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=all"  # [cuda_compiler_version != "None"]
+  string: cuda{{ cuda_compiler_version | replace('.', '') }}py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
+  string: cpu_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version == "None"]
 
 requirements:
   build:
