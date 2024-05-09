@@ -15,7 +15,7 @@ build:
   skip: True  # [win or py<39]
   script_env:
     # Turn off "-march=native"
-    - CMAKE_ARGS: -DFINUFFT_ARCH_FLAGS=
+    - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="
 
 requirements:
   build:
