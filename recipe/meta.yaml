@@ -16,7 +16,7 @@ build:
   script_env:
     # Turn off "-march=native"
     - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="
-    - SKBUILD_CMAKE_ARGS="-DJAX_FINUFFT_USE_CUDA=ON"    # [cuda_compiler_version != "None"]
+    - SKBUILD_CMAKE_ARGS="-DJAX_FINUFFT_USE_CUDA=ON -DCMAKE_CUDA_ARCHITECTURES=all"  # [cuda_compiler_version != "None"]
 
 requirements:
   build:
