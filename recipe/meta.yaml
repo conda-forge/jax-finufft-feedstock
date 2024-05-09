@@ -15,8 +15,8 @@ build:
   skip: True  # [win or py<39]
   script_env:
     # Turn off "-march=native"
-    - CMAKE_ARGS="-DFINUFFT_ARCH_FLAGS="  # [cuda_compiler_version == "None"]
-    - CMAKE_ARGS="-DCMAKE_CUDA_ARCHITECTURES=70 -DJAX_FINUFFT_USE_CUDA=ON"  # [cuda_compiler_version != "None"]
+    - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="                                                       # [cuda_compiler_version == "None"]
+    - SKBUILD_CMAKE_DEFINE="JAX_FINUFFT_USE_CUDA=ON;CMAKE_CUDA_ARCHITECTURES=all;FINUFFT_ARCH_FLAGS="  # [cuda_compiler_version != "None"]
   string: cuda{{ cuda_compiler_version | replace('.', '') }}py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
   string: cpu_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version == "None"]
 
