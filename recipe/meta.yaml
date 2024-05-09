@@ -24,11 +24,19 @@ requirements:
     - scikit-build-core                      # [build_platform != target_platform]
     - setuptools_scm                         # [build_platform != target_platform]
     - nanobind                               # [build_platform != target_platform]
+    - {{ compiler('cuda') }}                 # [cuda_compiler_version != "None"]
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - cmake
     - make  # [linux]
   host:
+    - nccl              # [cuda_compiler_version != "None"]
+    - cuda-cupti-dev    # [(cuda_compiler_version or "").startswith("12")]
+    - cuda-cudart-dev   # [(cuda_compiler_version or "").startswith("12")]
+    - cuda-nvml-dev     # [(cuda_compiler_version or "").startswith("12")]
+    - cuda-nvtx-dev     # [(cuda_compiler_version or "").startswith("12")]
+    - libcufft-dev      # [(cuda_compiler_version or "").startswith("12")]
+    - cuda-version {{ cuda_compiler_version }}
     - python
     - scikit-build-core
     - setuptools_scm
@@ -46,6 +54,7 @@ test:
   imports:
     - jax_finufft
     - jax_finufft.jax_finufft_cpu
+    - jax_finufft.jax_finufft_gpu  # [cuda_compiler_version != "None"]
   requires:
     - pip
   commands:
