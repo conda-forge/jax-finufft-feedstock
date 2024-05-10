@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 3
+  number: 4
   skip: True  # [win or py<39]
   script_env:
     # Turn off "-march=native"
@@ -39,6 +39,7 @@ requirements:
     - cuda-nvml-dev                             # [(cuda_compiler_version or "").startswith("12")]
     - cuda-nvtx-dev                             # [(cuda_compiler_version or "").startswith("12")]
     - libcufft-dev                              # [(cuda_compiler_version or "").startswith("12")]
+    - libcufft-static                           # [(cuda_compiler_version or "").startswith("12")]
     - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
     - python
     - scikit-build-core
