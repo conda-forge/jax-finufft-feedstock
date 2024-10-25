@@ -31,7 +31,7 @@ requirements:
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - make  # [linux]
+    - make
   host:
     - nccl                                      # [cuda_compiler_version != "None"]
     - cuda-cupti-dev                            # [(cuda_compiler_version or "").startswith("12")]
