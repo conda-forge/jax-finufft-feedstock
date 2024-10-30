@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 5
   skip: True  # [win or py<39]
   script_env:
     # Turn off "-march=native"
@@ -31,7 +31,7 @@ requirements:
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - make  # [linux]
+    - make
   host:
     - nccl                                      # [cuda_compiler_version != "None"]
     - cuda-cupti-dev                            # [(cuda_compiler_version or "").startswith("12")]
