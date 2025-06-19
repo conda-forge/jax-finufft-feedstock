@@ -12,7 +12,7 @@ source:
 build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  skip: true  # [win or py<310]
+  skip: true  # [win or py<310 or (osx and x86_64)]
   script_env:
     # Turn off "-march=native"
     - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="                                                       # [cuda_compiler_version == "None"]
