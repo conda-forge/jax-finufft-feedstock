@@ -1,5 +1,5 @@
 {% set name = "jax-finufft" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jax-finufft/jax_finufft-{{ version }}.tar.gz
-  sha256: 53d1b598bae3e61bf1d545cfbd3bb3463892f64fafd79f089d249dbc1f7f1e10
+  sha256: cb5ebb77fbaccbc8bfb43b2a1ba300f40ca7bfa08806a2473aa938194d446a80
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   skip: true  # [win or py<310 or (osx and x86_64)]
   script_env:
     # Turn off "-march=native"
