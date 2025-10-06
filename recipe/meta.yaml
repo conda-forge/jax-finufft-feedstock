@@ -52,7 +52,7 @@ requirements:
   run:
     - python
     - jax
-    - pydantic >= 2
+    - pydantic >=2
 
 test:
   imports:
