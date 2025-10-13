@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   skip: true  # [win or py<310 or (osx and x86_64)]
   script_env:
     # Turn off "-march=native"
@@ -52,7 +52,7 @@ requirements:
   run:
     - python
     - jax
-    - pydantic
+    - pydantic >=2
 
 test:
   imports:
