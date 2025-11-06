@@ -1,5 +1,5 @@
 {% set name = "jax-finufft" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jax-finufft/jax_finufft-{{ version }}.tar.gz
-  sha256: cb5ebb77fbaccbc8bfb43b2a1ba300f40ca7bfa08806a2473aa938194d446a80
+  sha256: e85fc8c56a3ec3977db3e0348b9ba28128227a4a4e2096ec6261fce2af42b65b
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   skip: true  # [win or py<310 or (osx and x86_64)]
   script_env:
     # Turn off "-march=native"
@@ -51,7 +51,7 @@ requirements:
     - libgomp  # [linux]
   run:
     - python
-    - jax
+    - jax >=0.5.0,<0.8
     - pydantic >=2
 
 test:
