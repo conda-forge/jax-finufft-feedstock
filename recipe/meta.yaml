@@ -51,7 +51,7 @@ requirements:
     - libgomp  # [linux]
   run:
     - python
-    - jax
+    - jax >=0.5.0,<0.8
     - pydantic >=2
 
 test:
