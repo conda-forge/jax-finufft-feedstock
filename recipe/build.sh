@@ -7,4 +7,6 @@ else
     export SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="
 fi
 
-${PYTHON} -m pip install . -vv
+export CMAKE_GENERATOR=Ninja
+
+${PYTHON} -m pip install . -vv -Cninja.make-fallback=false
