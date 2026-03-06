@@ -10,13 +10,8 @@ source:
   sha256: fc75d4c771faf76094f20521b62a326da75e425841088148f8478112f6adc34e
 
 build:
-  script: {{ PYTHON }} -m pip install . -vv
   number: 0
   skip: true  # [win or py<311 or (osx and x86_64)]
-  script_env:
-    # Turn off "-march=native"
-    - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="                                                       # [cuda_compiler_version == "None"]
-    - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS=;JAX_FINUFFT_USE_CUDA=ON;CMAKE_CUDA_ARCHITECTURES=all-major"  # [cuda_compiler_version != "None"]
   string: cuda{{ cuda_compiler_version | replace('.', '') }}py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
   string: cpu_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version == "None"]
 
