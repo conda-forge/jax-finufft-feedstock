@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jax-finufft/jax_finufft-{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: fc75d4c771faf76094f20521b62a326da75e425841088148f8478112f6adc34e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
