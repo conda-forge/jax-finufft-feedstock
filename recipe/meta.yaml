@@ -32,6 +32,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make
+    - jax >=0.5.0
   host:
     - nccl                                      # [cuda_compiler_version != "None"]
     - cuda-cupti-dev                            # [cuda_compiler_version != "None"]
