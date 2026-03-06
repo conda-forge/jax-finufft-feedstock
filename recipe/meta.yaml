@@ -1,5 +1,5 @@
 {% set name = "jax-finufft" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0rc1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jax-finufft/jax_finufft-{{ version }}.tar.gz
-  sha256: e85fc8c56a3ec3977db3e0348b9ba28128227a4a4e2096ec6261fce2af42b65b
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  skip: true  # [win or py<310 or (osx and x86_64)]
+  skip: true  # [win or py<311 or (osx and x86_64)]
   script_env:
     # Turn off "-march=native"
     - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="                                                       # [cuda_compiler_version == "None"]
@@ -51,7 +51,7 @@ requirements:
     - libgomp  # [linux]
   run:
     - python
-    - jax >=0.5.0,<0.8
+    - jax >=0.5.0
     - pydantic >=2
 
 test:
