@@ -50,6 +50,7 @@ requirements:
     - fftw
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
+    - jax >=0.5.0
   run:
     - python
     - jax >=0.5.0
