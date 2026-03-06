@@ -26,7 +26,7 @@ requirements:
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - cmake
-    - make
+    - ninja
     - jax >=0.5.0
   host:
     - nccl                                      # [cuda_compiler_version != "None"]
