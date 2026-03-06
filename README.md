@@ -29,80 +29,87 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_cuda_compiler_version12.9python3.10.____cpython</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_version12.9python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version12.9python3.11.____cpython</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_version12.9python3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version12.9python3.12.____cpython</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_version12.9python3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version12.9python3.13.____cp313</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_version12.9python3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_version12.9python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_version12.9python3.14.____cp314</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_version12.9python3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_versionNonepython3.10.____cpython</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_versionNonepython3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_versionNonepython3.11.____cpython</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_versionNonepython3.11.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_versionNonepython3.12.____cpython</td>
+              <td>linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.14.____cp314</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_versionNonepython3.12.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.17cuda_compiler_versionNonepython3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_versionNonepython3.13.____cp313</td>
+              <td>linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.11.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_versionNonepython3.13.____cp313" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_cuda_compiler_versionNonepython3.14.____cp314</td>
+              <td>linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_cuda_compiler_versionNonepython3.14.____cp314" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_python3.10.____cpython</td>
+              <td>linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.13.____cp313</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.13.____cp313" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.14.____cp314</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=22215&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jax-finufft-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_c_stdlib_version2.28cuda_compiler_version13.0python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -151,14 +158,14 @@ Current release info
 Installing jax-finufft
 ======================
 
-Installing `jax-finufft` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `jax-finufft` from the `conda-forge/label/jax-finufft_rc` channel can be achieved by adding `conda-forge/label/jax-finufft_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/jax-finufft_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `jax-finufft` can be installed with `conda`:
+Once the `conda-forge/label/jax-finufft_rc` channel has been enabled, `jax-finufft` can be installed with `conda`:
 
 ```
 conda install jax-finufft
@@ -173,26 +180,26 @@ mamba install jax-finufft
 It is possible to list all of the versions of `jax-finufft` available on your platform with `conda`:
 
 ```
-conda search jax-finufft --channel conda-forge
+conda search jax-finufft --channel conda-forge/label/jax-finufft_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search jax-finufft --channel conda-forge
+mamba search jax-finufft --channel conda-forge/label/jax-finufft_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search jax-finufft --channel conda-forge
+mamba repoquery search jax-finufft --channel conda-forge/label/jax-finufft_rc
 
 # List packages depending on `jax-finufft`:
-mamba repoquery whoneeds jax-finufft --channel conda-forge
+mamba repoquery whoneeds jax-finufft --channel conda-forge/label/jax-finufft_rc
 
 # List dependencies of `jax-finufft`:
-mamba repoquery depends jax-finufft --channel conda-forge
+mamba repoquery depends jax-finufft --channel conda-forge/label/jax-finufft_rc
 ```
 
 
