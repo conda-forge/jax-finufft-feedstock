@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/j/jax-finufft/jax_finufft-{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: fc75d4c771faf76094f20521b62a326da75e425841088148f8478112f6adc34e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -16,7 +16,7 @@ build:
   script_env:
     # Turn off "-march=native"
     - SKBUILD_CMAKE_DEFINE="FINUFFT_ARCH_FLAGS="                                                       # [cuda_compiler_version == "None"]
-    - SKBUILD_CMAKE_DEFINE="JAX_FINUFFT_USE_CUDA=ON;CMAKE_CUDA_ARCHITECTURES=all;FINUFFT_ARCH_FLAGS="  # [cuda_compiler_version != "None"]
+    - SKBUILD_CMAKE_DEFINE="JAX_FINUFFT_USE_CUDA=ON;CMAKE_CUDA_ARCHITECTURES=all-major;FINUFFT_ARCH_FLAGS="  # [cuda_compiler_version != "None"]
   string: cuda{{ cuda_compiler_version | replace('.', '') }}py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
   string: cpu_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version == "None"]
 
@@ -35,12 +35,12 @@ requirements:
     - jax >=0.5.0
   host:
     - nccl                                      # [cuda_compiler_version != "None"]
-    - cuda-cupti-dev                            # [(cuda_compiler_version or "").startswith("12")]
-    - cuda-cudart-dev                           # [(cuda_compiler_version or "").startswith("12")]
-    - cuda-nvml-dev                             # [(cuda_compiler_version or "").startswith("12")]
-    - cuda-nvtx-dev                             # [(cuda_compiler_version or "").startswith("12")]
-    - libcufft-dev                              # [(cuda_compiler_version or "").startswith("12")]
-    - libcufft-static                           # [(cuda_compiler_version or "").startswith("12")]
+    - cuda-cupti-dev                            # [cuda_compiler_version != "None"]
+    - cuda-cudart-dev                           # [cuda_compiler_version != "None"]
+    - cuda-nvml-dev                             # [cuda_compiler_version != "None"]
+    - cuda-nvtx-dev                             # [cuda_compiler_version != "None"]
+    - libcufft-dev                              # [cuda_compiler_version != "None"]
+    - libcufft-static                           # [cuda_compiler_version != "None"]
     - cuda-version {{ cuda_compiler_version }}  # [cuda_compiler_version != "None"]
     - python
     - scikit-build-core
