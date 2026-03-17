@@ -158,14 +158,14 @@ Current release info
 Installing jax-finufft
 ======================
 
-Installing `jax-finufft` from the `conda-forge/label/jax-finufft_rc` channel can be achieved by adding `conda-forge/label/jax-finufft_rc` to your channels with:
+Installing `jax-finufft` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
-conda config --add channels conda-forge/label/jax-finufft_rc
+conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge/label/jax-finufft_rc` channel has been enabled, `jax-finufft` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `jax-finufft` can be installed with `conda`:
 
 ```
 conda install jax-finufft
@@ -180,26 +180,26 @@ mamba install jax-finufft
 It is possible to list all of the versions of `jax-finufft` available on your platform with `conda`:
 
 ```
-conda search jax-finufft --channel conda-forge/label/jax-finufft_rc
+conda search jax-finufft --channel conda-forge
 ```
 
 or with `mamba`:
 
 ```
-mamba search jax-finufft --channel conda-forge/label/jax-finufft_rc
+mamba search jax-finufft --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search jax-finufft --channel conda-forge/label/jax-finufft_rc
+mamba repoquery search jax-finufft --channel conda-forge
 
 # List packages depending on `jax-finufft`:
-mamba repoquery whoneeds jax-finufft --channel conda-forge/label/jax-finufft_rc
+mamba repoquery whoneeds jax-finufft --channel conda-forge
 
 # List dependencies of `jax-finufft`:
-mamba repoquery depends jax-finufft --channel conda-forge/label/jax-finufft_rc
+mamba repoquery depends jax-finufft --channel conda-forge
 ```
 
 
