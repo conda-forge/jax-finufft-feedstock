@@ -27,7 +27,6 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja
-    - jax >=0.5.0
   host:
     - nccl                                      # [cuda_compiler_version != "None"]
     - cuda-cupti-dev                            # [cuda_compiler_version != "None"]
@@ -45,7 +44,7 @@ requirements:
     - fftw
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
-    - jax >=0.5.0
+    - jax ==0.8.0
   run:
     - python
     - jax >=0.5.0
