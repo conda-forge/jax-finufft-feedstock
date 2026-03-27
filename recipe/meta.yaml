@@ -27,6 +27,7 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - ninja
+    - jax ==0.7.2
   host:
     - nccl                                      # [cuda_compiler_version != "None"]
     - cuda-cupti-dev                            # [cuda_compiler_version != "None"]
