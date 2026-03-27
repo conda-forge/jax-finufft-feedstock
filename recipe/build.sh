@@ -9,4 +9,4 @@ fi
 
 export CMAKE_GENERATOR=Ninja
 
-${PYTHON} -m pip install . -vv -Cninja.make-fallback=false
+${PYTHON} -m pip install . -vv -Cninja.make-fallback=false --no-deps --no-build-isolation
