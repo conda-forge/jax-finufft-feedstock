@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/j/jax-finufft/jax_finufft-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/j/jax-finufft/jax_finufft-{{ version }}.tar.gz
   sha256: 821d981bf180916ba8c5076bd6e267a4d0e1cb0b01ea60c029859f78db5a55f1
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win or py<311 or (osx and x86_64)]
   string: cuda{{ cuda_compiler_version | replace('.', '') }}py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version != "None"]
   string: cpu_py{{ CONDA_PY }}h{{ PKG_HASH }}_{{ PKG_BUILDNUM }}  # [cuda_compiler_version == "None"]
